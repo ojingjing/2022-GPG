@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+	char string[20];
+	char c;
+	printf("문자열 입력>");
+	scanf("%s", string);
+	printf("문자입력>"); 
+	scamf("%c",&c);
+	
+	printf("s\n",string);
+	printf("!!%c!!\n",c);
+	return 0;
+}
