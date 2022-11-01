@@ -71,3 +71,4 @@ delete box라서 x표시가 있었는데 skeleton 을 적용하니 css가 바뀌
 내이력서에 대한 메시지를 남길수 있게 메시지 창을 추가하였다.
  ___
 ### webHosting
+[github.io](https://ojingjing.github.io/GameProgramming/),[netlify](https://resplendent-arithmetic-b46254.netlify.app/)
