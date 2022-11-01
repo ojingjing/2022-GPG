@@ -1,0 +1,168 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');/*폰트바꾸는법:googlefont 에서 import하고 복사해넣기 (고딕체)*/
+/*bluma*/
+@import 'bulma/css/bulma.css';
+
+
+body {
+     /*TODO:여기를 색을 바꿀것*/
+    background-color: #d1e2ff;
+    color: #2f2f2f; /*글자색*/
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+section{
+    background-color: rgba(249, 249, 231, 0.945);
+    border-radius:10px ; /*동글동글*/
+    padding: 20px; /*겉부분을 늘려줌*/
+    margin-bottom: 10px; /*margin>border>padding>contnt*/
+}
+
+.wrapper {
+        width:85%;
+        margin:20px auto; /*위아래는 20 오왼은 자동해주세요:중앙정렬*/
+} /*div.wrapper 처럼 요소점수가 올라가는거 최대한 자제*/
+
+h1 {
+    display: none; /* 원래 없었던것처럼 없애줌 ,visibility: hidden;은 글자만 없애줌*/
+}
+
+h2,h3{
+    font-family: sans-serif;
+}/*,쓰면 같이 적용된다 ,글꼴변형*/
+
+h2{
+    margin: 0 0 20px 0; /*순서대로 위 오른쪽 아래 왼쪽*/ 
+    text-transform: uppercase ;/*대문자로 만들어줌*/
+    font-size: 18px;
+
+}
+
+section:first-of-type {
+background-color: #a5cbf0e1;
+} /*firstoftype:부모의 첫 자식타입 first chile:부모밑의 첫번째 자식 구분하기 */
+
+#My_info h2{
+    display: none;
+}
+
+#My_info img {
+    width:100px;
+    height: auto;
+    border-radius: 50px; /*사진 원으로 만들기*/
+    margin-right: 40px;
+}
+
+table{
+    display: inline-block ; /*글자가 옆으로 간다*/
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: top; /*이미지에 맞게 ?*/
+
+}
+
+th{
+    text-align: left; /*글자 왼쪽 정렬*/
+    padding-right: 20px;
+
+}
+
+th,td {
+    font-size :13px;
+}
+
+#myname th{
+    display:none; /*myinfo 없애는 코드*/
+}
+#myname td{
+    display: block;
+    font-size:  18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+a{
+    color:black ;/*하이퍼링크 색바꾸기*/
+    text-decoration: none; /*하이퍼링크 밑줄 없애기*/
+}
+
+a:hover { /*포인트가 올라갔을때 밑줄을 생성하고 색을 바꿔라*/
+    text-decoration: underline; 
+    color:rgb(30, 236, 188);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 4px;
+}
+
+ul li ::before {
+    content:url('../images/');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+ul li:nth-child(1)::before{
+    content:url('image/ico_mobile.png');
+}
+ul li:nth-child(2)::before{
+    content:url('image/ico_email.png');
+}
+ul li:nth-child(3)::before{
+    content:url('image/ico_facebook.png');
+}
+
+#skills ol{
+    list-style: none;
+    padding: 0;
+}
+
+#skills li{
+    display: inline-block; /*줄바꿈이 없이 옆으로 나열된다*/
+    background-color: #a5cbf0e1;
+    padding: 4px 10px; /*박스가 커짐*/
+    border-radius: 32px;
+    margin: 0 8px 8px 0;
+}
+
+#skills li::before{
+    content:"#";
+}
+
+#project ol {
+    list-style:none;
+    padding:0;   /*리스트 초기화 하는것*/
+}
+
+#project li {
+    border-bottom: 1px solid #ddd;
+}
+#projcets li :last-child{
+    border-bottom: none;
+}
+
+#project video {
+    width: 100%;
+}
+
+#project a{
+    color:#a5cbf0e1;
+    display:inline-block;
+    border-radius: 4px;
+    padding: 2px 8px 2px 0;
+    background-color:  black;
+}
+
+#project a:hover {
+    background-color:  #2f2f2f;
+    text-decoration: none;
+    padding: 2px 8px;
+    transition: padding 0.2s;
+}
