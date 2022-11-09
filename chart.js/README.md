@@ -32,8 +32,15 @@ Line chart: My life graph 를 구현하였다.
  ___
 ### Improvement   
 우선 bubble chart  에서 x축을 보면 칸의 크기가 80으로 다른걸 알 수 있다.
-이부분을 개선하기 위해서 op
+이부분을 개선하기 위해서 options에
 ```
-  ticks:{}
+  ticks:{min:-100 , max:100}
+```
+으로 칸개수를 100으로 맞춰볼려했지만 화면이 아예 뜨지않았다...
+
+```
+    responsive:false
+```
+를 써서 바꿔보라는 말도 있었는데 이것도 위와같이 화면이 뜨지않았다..
 ### webHosting
->[github.io](https://ojingjing.github.io/GameProgramming/),[netlify](https://resplendent-arithmetic-b46254.netlify.app/)
+>[netlify](https://loquacious-cuchufli-e1c176.netlify.app/)
