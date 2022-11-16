@@ -65,12 +65,10 @@ void clear_text(void)
 
 ### **PICK UP GAME**   
 제한시간 동안 랜덤으로 생성되는 별을 많이 먹어 점수를 쌓는게임.  
-![image](https://user-images.githubusercontent.com/48702158/196648055-0dc8b5ff-408c-4b21-aa81-97e86c3ba3a8.png)    
 
 ---
 ## **1.메인 화면 구성**     
 
-<img src="https://user-images.githubusercontent.com/48702158/196648478-51cbaca8-c6a8-472a-a12a-ce19a78093cc.png" width="400" height="200"/>   
 
 > 화살표를 제한된 범위내에서 움직이게 하여야했는데   
 case로 x,y의 범위를 지정해주었다.
@@ -201,7 +199,7 @@ srand(time(NULL));
 ---
 ## **[개선할점]**
 
-artly    
+
  ---
 **[netlify]**  
 https://sage-dasik-bf1c7c.netlify.app/
