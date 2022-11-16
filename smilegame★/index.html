@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <title>☆★ smilegame ☆★</title>
+    <style>
+        *{
+            font-family:   comic sans ms;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #main{
+            position: fixed;
+            width: 800px;
+            height: 450px;
+            background-color: aqua;
+            border: 4px dashed black;
+        }
+        #start{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #start p{
+            margin: 100px;
+            font-size: 70px;
+            font-weight: 800;
+            -webkit-text-stroke: 2px yellow;
+        }
+     
+        .s-btn{ 
+            border: 0;
+            display: block;
+            outline: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            position: relative;
+            padding: 10px 40px;
+            border-radius: 7px;
+            background-color: yellow;
+               
+        }
+    
+        .s-btn:hover {
+           
+            box-shadow: 0px 0px 1px 7px #A66615;
+        }
+        .s-btnh{ 
+            border: 0;
+            display: block;
+            outline: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            position: relative;
+            padding: 10px 40px;
+            border-radius: 7px;
+            background-color: yellow;
+            margin: 20px;
+ 
+        }
+    
+        .s-btnh:hover {
+           
+            box-shadow: 0px 0px 1px 7px #A66615;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id ="start">
+            <p>Smile Game</p>
+          <button type="button" class="s-btn" onClick="location.href='level.html'">
+            <audio  src="mp3/click.mp3"></audio>
+            start!
+          </button>
+          <button type="button" class="s-btnh" onClick="location.href='information.html'">
+            information
+          </button>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+
+    <style>
+        *{
+            font-family:   comic sans ms;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #main{
+            position: fixed;
+            width: 800px;
+            height: 450px;
+            background-color: aqua;
+            border: 4px dashed black;
+        }
+        #start{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #start p{
+            margin: 30px;
+            font-size: 40px;
+            font-weight: 800;
+            -webkit-text-stroke: 2px yellow;
+        }
+        #start span{
+            margin: 20px;
+            margin-bottom: 80px;
+            font-weight: 600;
+        }
+        .s-btn{ 
+            border: 0;
+            display: block;
+            outline: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            position: relative;
+            padding: 10px 40px;
+            border-radius: 7px;
+            background-color: yellow;
+               
+        }
+    
+        .s-btn:hover {
+           
+            box-shadow: 0px 0px 1px 7px #A66615;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id ="start">
+            <p>information</p>
+            <span>만든이:오정민<br>게임설명:블럭을 피하여 살아남는 게임이다.<br>조작법:→,←,↑,↓<br>제작날짜:2022.11.16</span>
+          <button type="button" class="s-btn" onClick="location.href='main.html'">
+            back
+          </button>
+        </div>
+    </div>
+
+</body>
+</html>
